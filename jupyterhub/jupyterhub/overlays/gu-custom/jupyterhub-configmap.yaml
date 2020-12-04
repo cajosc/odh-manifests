@@ -18,7 +18,7 @@ data:
     c.CASAuthenticator.cas_service_url = 'https://jupyterhub.marine.gu.se/login'
     c.JupyterHub.authenticator_class = 'jhub_cas_authenticator.cas_auth.CASAuthenticator'
 
-    # Tillåt inga oregistrerade användare att logga in.
+    # Tillåt alla att logga in.
 
     admin_users = os.environ.get('JUPYTERHUB_ADMIN_USERS')
     if admin_users:
